@@ -1,0 +1,103 @@
+@import "reset.css";
+
+.hidden {
+  display: none;
+}
+body {
+  color: white;
+}
+
+#weather {
+  text-align: end;
+  position: relative;
+  right: 20px;
+  top: 10px;
+}
+
+#clock {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.login-form__div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-form__div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#quote {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.loginInput,
+.todo-input {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+  width: 25%;
+  padding: 5px;
+  margin: 10px 0;
+  color: white;
+  opacity: 0.8;
+}
+
+.loginInput::placeholder,
+.todo-input::placeholder {
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+.login-container {
+  padding: 15px;
+  background-color: rgba(0, 0, 1, 0.7);
+  margin: 0 20%;
+}
+
+#weather {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  transition: color 1s ease-in-out;
+}
+
+h1:hover {
+  color: yellowgreen;
+}
+
+.todo-input {
+  transition: transform ease-in-out 3s;
+}
+.todo-input:focus {
+  transform: translateY(10px);
+}
+
+@keyframes clocklocate {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
+}
+
+#clock {
+  animation: clocklocate 2s ease-in-out infinite;
+}
